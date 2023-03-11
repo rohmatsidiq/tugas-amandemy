@@ -1,0 +1,13 @@
+.font-pacifico {
+  font-family: "Pacifico", cursive;
+}
+
+.bg-image-hero {
+  background-image: url("https://images.tokopedia.net/img/cache/1200/BgtCLw/2021/5/7/0c74d77f-e440-4f29-b185-856bc71f655a.jpg?ect=4g");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-shadaw {
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.596);
+}

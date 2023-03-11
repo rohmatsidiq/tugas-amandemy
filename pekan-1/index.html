@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moufit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-slate-100">
+    <!-- NAVIGASI -->
+    <div class="w-screen bg-white drop-shadow-md fixed top-0">
+      <div class="max-w-[1080px] p-3 mx-auto">
+        <div class="flex flex-row h-10 justify-between items-center">
+          <div class="text-sky-500">
+            <a href="index.html">
+              <p class="font-bold text-2xl">MOUFIT</p>
+              <p class="font-pacifico text-xs">Moslem Outfit</p>
+            </a>
+          </div>
+          <div>
+            <nav>
+              <ul class="flex gap-3 text-sky-500">
+                <li class="hover:scale-105 duration-100">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="hover:scale-105 duration-100">
+                  <a href="form.html">Form</a>
+                </li>
+                <li class="hover:scale-105 duration-100">
+                  <a href="products.html">Products</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex gap-3">
+            <button
+              class="border-solid border border-sky-500 text-sky-500 bg-white px-4 py-2 rounded-lg hover:scale-105 duration-100"
+            >
+              Login
+            </button>
+            <button
+              class="bg-sky-500 text-white px-4 py-2 rounded-lg hover:scale-105 duration-100"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="w-screen max-w-[1080px] p-3 mx-auto mt-20">
+      <div
+        class="bg-white p-3 rounded-lg h-[500px] flex justify-center items-center bg-image-hero"
+      >
+        <h1 class="text-7xl font-pacifico text-white hero-shadaw text-center">
+          Make You Truly Confident
+        </h1>
+      </div>
+    </div>
+
+    <!-- SECTION CATALOG -->
+    <section class="w-screen max-w-[1080px] p-3 mx-auto mt-5">
+      <div class="flex justify-between">
+        <h3 class="text-sky-500 text-2xl font-bold">Catalog Product</h3>
+        <a
+          href="products.html"
+          class="bg-sky-500 text-white px-4 py-2 rounded-lg hover:scale-105 duration-100"
+        >
+          See More
+        </a>
+      </div>
+      <div class="grid md:grid-cols-4 grid-cols-2 gap-4 my-3">
+        <a
+          href="detail.html"
+          class="bg-white drop-shadow-md rounded-lg overflow-hidden hover:scale-105 duration-100 hover:border-solid hover:border hover:border-sky-500"
+        >
+          <img
+            class="w-full"
+            src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/4/13/6c40b7d1-5b5b-4e9f-a406-bc54954e3677.jpg.webp?ect=4g"
+            alt="Baju Koko Bahan Linen"
+          />
+          <div class="p-3 flex flex-col">
+            <h5 class="text-lg">Baju Koko Bahan Linen</h5>
+            <p class="line-through">Rp175.000</p>
+            <p class="text-sky-500">Rp145.000</p>
+            <small>Stock: 200</small>
+          </div>
+        </a>
+
+        <a
+          href="detail.html"
+          class="bg-white drop-shadow-md rounded-lg overflow-hidden hover:scale-105 duration-100 hover:border-solid hover:border hover:border-sky-500"
+        >
+          <img
+            class="w-full"
+            src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/10/3/76ebfac9-91ff-4f4f-abec-5744cabd4df4.jpg.webp?ect=3g"
+            alt="Koko Kurta Modern"
+          />
+          <div class="p-3 flex flex-col">
+            <h5 class="text-lg">Koko Kurta Modern</h5>
+            <p class="text-sky-500">Rp78.400</p>
+            <small>Stock: 13</small>
+          </div>
+        </a>
+
+        <a
+          href="detail.html"
+          class="bg-white drop-shadow-md rounded-lg overflow-hidden hover:scale-105 duration-100 hover:border-solid hover:border hover:border-sky-500"
+        >
+          <img
+            class="w-full"
+            src="https://citrus.id/wp-content/uploads/2022/04/IMG_0455.jpg"
+            alt="Baju Koko Pria Warna Abu"
+          />
+          <div class="p-3 flex flex-col">
+            <h5 class="text-lg">Baju Koko Pria Warna Abu</h5>
+            <p class="line-through">Rp145.000</p>
+            <p class="text-sky-500">Rp119.000</p>
+            <small>Stock: 40</small>
+          </div>
+        </a>
+
+        <a
+          href="detail.html"
+          class="bg-white drop-shadow-md rounded-lg overflow-hidden hover:scale-105 duration-100 hover:border-solid hover:border hover:border-sky-500"
+        >
+          <img
+            class="w-full"
+            src="https://batampos.co.id/wp-content/uploads/2022/09/baju-koko.jpg"
+            alt="Baju Koko Premium"
+          />
+          <div class="p-3 flex flex-col">
+            <h5 class="text-lg">Baju Koko Premium</h5>
+            <p class="line-through">Rp489.000</p>
+            <p class="text-sky-500">Rp330.000</p>
+            <small>Stock: 80</small>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
