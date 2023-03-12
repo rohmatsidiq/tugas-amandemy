@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moufit</title>
+    <title>Moufit | Detail</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
@@ -63,94 +63,101 @@
       </div>
     </div>
 
-    <!-- HERO -->
-    <div class="w-screen max-w-[1080px] p-3 mx-auto mt-20">
-      <div
-        class="bg-white p-3 rounded-lg h-[450px] flex justify-center items-center bg-image-hero"
-      >
-        <h1 class="text-7xl font-pacifico text-white hero-shadaw text-center">
-          Make You Truly Confident
-        </h1>
-      </div>
-    </div>
-
-    <!-- SECTION CATALOG -->
-    <section class="w-screen max-w-[1080px] p-3 mx-auto mt-5">
-      <div class="flex justify-between items-center">
-        <h3 class="text-sky-500 text-2xl font-bold">Catalog Product</h3>
-        <a
-          href="products.html"
-          class="bg-sky-500 text-white px-4 py-2 rounded-lg hover:scale-105 duration-100"
-        >
-          See More
-        </a>
-      </div>
-      <div class="grid md:grid-cols-4 grid-cols-2 gap-4 my-3">
-        <a
-          href="detail.html"
-          class="bg-white drop-shadow-md rounded-lg overflow-hidden"
-        >
-          <img
-            class="w-full"
-            src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/4/13/6c40b7d1-5b5b-4e9f-a406-bc54954e3677.jpg.webp?ect=4g"
-            alt="Baju Koko Bahan Linen"
-          />
-          <div class="p-3">
-            <h5 class="text-lg">Baju Koko Bahan Linen</h5>
-            <p class="line-through">Rp175.000</p>
-            <p class="text-sky-500">Rp145.000</p>
-            <small>Stock: 200</small>
+    <!-- SECTION FORM -->
+    <section class="w-screen max-w-[1080px] p-3 mx-auto mt-20">
+      <div class="bg-white p-6 rounded-lg bg-white drop-shadow-md">
+        <h3 class="font-bold text-2xl text-sky-500">Created Product</h3>
+        <form class="mt-3" action="">
+          <div class="grid grid-cols-5 gap-5 flex items-end">
+            <div class="col-span-3 flex flex-col gap-1">
+              <label class="" for="namaBarang">Nama Barang</label>
+              <input
+                class="border px-3 py-1 rounded-lg focus:outline-none focus:border-sky-500"
+                type="text"
+                id="namaBarang"
+                placeholder="Masukkan Nama Barang"
+              />
+            </div>
+            <div class="col-span-2 flex flex-col gap-1">
+              <label class="" for="stockBarang">Stock Barang</label>
+              <input
+                class="border px-3 py-1 rounded-lg focus:outline-none focus:border-sky-500"
+                type="number"
+                id="stockBarang"
+                placeholder="Masukkan Stock Barang"
+              />
+            </div>
+            <div class="col-span-2 flex flex-col gap-1">
+              <label class="" for="hargaBarang">Harga Barang</label>
+              <input
+                class="border px-3 py-1 rounded-lg focus:outline-none focus:border-sky-500"
+                type="number"
+                id="hargaBarang"
+                placeholder="Masukkan Harga Barang"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                class="border px-3 py-1 rounded-lg checked:border-sky-500"
+                type="checkbox"
+                id="statusDiskon"
+                placeholder="Masukkan Harga Barang"
+              />
+              <label class="ml-2" for="statusDiskon">Status Diskon</label>
+            </div>
+            <div class="col-span-2 flex flex-col gap-1">
+              <label class="" for="hargaDiskon">Harga Diskon</label>
+              <input
+                class="border px-3 py-1 rounded-lg focus:outline-none focus:border-sky-500"
+                type="number"
+                id="hargaDiskon"
+                placeholder="Masukkan Harga Diskon"
+              />
+            </div>
+            <div class="col-span-2 flex flex-col gap-1">
+              <label class="" for="kategori">Kategori</label>
+              <select
+                class="border px-3 py-1 rounded-lg focus:outline-none focus:border-sky-500 bg-white"
+                id="kategori"
+              >
+                <option value="kokoPria">Koko Pria</option>
+                <option value="gamis">Gamis</option>
+                <option value="sarung">Sarung</option>
+                <option value="mukena">Mukena</option>
+              </select>
+            </div>
+            <div class="col-span-3 flex flex-col gap-1">
+              <label class="" for="gambarBarang">Gambar Barang</label>
+              <input
+                class="border px-3 py-1 rounded-lg focus:outline-none focus:border-sky-500"
+                type="text"
+                id="gambarBarang"
+                placeholder="Masukkan URL Gambar"
+              />
+            </div>
+            <div class="col-span-5 flex flex-col gap-1">
+              <label class="" for="deskripsiBarang">Deskripsi</label>
+              <textarea
+                class="border px-3 py-1 rounded-lg focus:outline-none focus:border-sky-500"
+                id="deskripsiBarang"
+                rows="10"
+                placeholder="Masukkan Deskripsi Barang"
+              ></textarea>
+            </div>
           </div>
-        </a>
-
-        <a
-          href="detail.html"
-          class="bg-white drop-shadow-md rounded-lg overflow-hidden"
-        >
-          <img
-            class="w-full"
-            src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/10/3/76ebfac9-91ff-4f4f-abec-5744cabd4df4.jpg.webp?ect=3g"
-            alt="Koko Kurta Modern"
-          />
-          <div class="p-3">
-            <h5 class="text-lg">Koko Kurta Modern</h5>
-            <p class="text-sky-500">Rp78.400</p>
-            <small>Stock: 13</small>
+          <div class="flex justify-end gap-3 mt-5">
+            <button
+              class="border-solid border border-sky-500 text-sky-500 bg-white px-4 py-2 rounded-lg hover:scale-105 duration-100"
+            >
+              Cancel
+            </button>
+            <button
+              class="bg-sky-500 text-white px-4 py-2 rounded-lg hover:scale-105 duration-100"
+            >
+              Save
+            </button>
           </div>
-        </a>
-
-        <a
-          href="detail.html"
-          class="bg-white drop-shadow-md rounded-lg overflow-hidden"
-        >
-          <img
-            class="w-full"
-            src="https://citrus.id/wp-content/uploads/2022/04/IMG_0455.jpg"
-            alt="Baju Koko Pria Warna Abu"
-          />
-          <div class="p-3">
-            <h5 class="text-lg">Baju Koko Pria Warna Abu</h5>
-            <p class="line-through">Rp145.000</p>
-            <p class="text-sky-500">Rp119.000</p>
-            <small>Stock: 40</small>
-          </div>
-        </a>
-        <a
-          href="detail.html"
-          class="bg-white drop-shadow-md rounded-lg overflow-hidden"
-        >
-          <img
-            class="w-full"
-            src="https://batampos.co.id/wp-content/uploads/2022/09/baju-koko.jpg"
-            alt="Baju Koko Premium"
-          />
-          <div class="p-3">
-            <h5 class="text-lg">Baju Koko Premium</h5>
-            <p class="line-through">Rp489.000</p>
-            <p class="text-sky-500">Rp330.000</p>
-            <small>Stock: 80</small>
-          </div>
-        </a>
+        </form>
       </div>
     </section>
 

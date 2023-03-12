@@ -11,3 +11,14 @@
 .hero-shadaw {
   text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.596);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+small,
+a {
+  font-family: "Poppins", sans-serif;
+}
