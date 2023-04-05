@@ -81,6 +81,7 @@ function CreateProduct() {
       image_url: "",
       description: "",
     });
+    navigate('/table')
   };
 
   return (
