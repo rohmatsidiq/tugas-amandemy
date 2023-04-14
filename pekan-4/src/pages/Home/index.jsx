@@ -6,7 +6,7 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 function Home() {
   const [products, setProducts] = useState([]);
-  const newProducts = [];
+  const newProducts = products.slice(0, 4);
   const getProducts = async () => {
     try {
       const result = await axios.get(
@@ -23,12 +23,6 @@ function Home() {
     getProducts();
   }, []);
 
-  if (products.length > 0) {
-    for (let i = 0; i < 4; i++) {
-      newProducts.push(products[i]);
-    }
-  }
-
   return (
     <div className="mt-20">
       <Nav />
@@ -41,7 +35,7 @@ function Home() {
             to={"/products"}
             className="flex items-center gap-2 bg-sky-500 text-white px-4 py-2 rounded-full hover:scale-105 hover:shadow-md hover:shadow-sky-200"
           >
-            <BsFillArrowRightCircleFill />{" "}See more
+            <BsFillArrowRightCircleFill /> See more
           </Link>
         </div>
         {newProducts.length <= 0 && (
